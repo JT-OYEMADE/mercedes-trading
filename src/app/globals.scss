@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-geist
+}
+
+@mixin buttonTransition() {
+  transition: all 0.7s cubic-bezier(0.2, 1, 0.22, 1);
+}
+
+button {
+  @include buttonTransition();
+
+  &:hover {
+    transform: translateY(-1.5px);
+  }
+}
