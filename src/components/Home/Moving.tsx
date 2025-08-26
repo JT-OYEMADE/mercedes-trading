@@ -56,11 +56,11 @@ export const Moving = () => {
             </div>
             <div>
               <Badge text='our vision' />
-              <p className='text-2xl text-gray mt-2'>To become the leading global trading and operating platform for simplifying access to commodities in Africa.</p>
+              <p className='text-sm md:text-2xl text-gray mt-2'>To become the leading global trading and operating platform for simplifying access to commodities in Africa.</p>
             </div>
             <div>
               <Badge text='our mission' />
-              <p className='text-2xl text-gray mt-2'>To transform Africa’s natural resources value chains by providing access to global markets through effective supply chain and excellent execution.</p>
+              <p className='text-sm md:text-2xl text-gray mt-2'>To transform Africa’s natural resources value chains by providing access to global markets through effective supply chain and excellent execution.</p>
             </div>
           </div>
         </div>
