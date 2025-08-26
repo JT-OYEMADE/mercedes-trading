@@ -45,7 +45,7 @@ export const footerData = [
       },
       {
         name: 'Twitter (X)',
-        link: '/',
+        link: '',
       },
       {
         name: 'LinkedIn',
@@ -70,11 +70,11 @@ export const footerData = [
       },
       {
         name: '📞 +234 708 1232 817',
-        link: '/',
+        link: 'tel:07078298382',
       },
       {
         name: '📧 mercedescommodities@gmail.com',
-        link: '/',
+        link: 'mailto:mercedescommodities@gmail.com',
       },
     ],
   },
@@ -83,7 +83,7 @@ export const footerData = [
 
 export const Footer = () => {
   return (
-    <footer className="p-[18px] md:p-6 -tracking-[0.04em]">
+    <footer className="p-[18px] md:p-6 -tracking-[0.04em] rounded-[20px] md:rounded-[40px] ">
       <div className='pt-24 relative bg-footer-bg bg-cover bg-no-repeat min-h-fit sm:min-h-0 rounded-[20px] md:rounded-[40px]'>
         <div className="container">
           <div className=" md:w-[568px] mx-auto flex flex-col items-center text-center text-white space-y-3 mb-[66px]">
@@ -93,13 +93,27 @@ export const Footer = () => {
           </div>
         </div>
         <div className="px-4 pb-5">
-          <div className="bg-[#FEFEFE] rounded-[40px] px-10 pt-14">
-            <div className="mb-8">
+          <div className="bg-[#FEFEFE] rounded-[40px] px-5 md:px-10 pt-14">
+            <div className="mb-8 flex flex-col lg:flex-row space-y-8 md:space-y-0 lg:items-start justify-between">
               <div className="flex items-end gap-x-1">
                 <Link href='/'>
                   <img className='h-12 w-auto' src='/images/mercedes-blue-logo.svg' alt='Mercedes Blue Logo' />
                 </Link>
                 <p className="text-gray leading-snug">Mercedes Trading & <br /> Transport Limited (MTTL)</p>
+              </div>
+              <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-20">
+                {footerData.map((x, i) => (
+                  <div key={i}>
+                    <h3 className="text-xl text-primary">{x.header}</h3>
+                    <div className="mt-3">
+                      {x.list.map((item, key) => (
+                        <div key={key}>
+                          <Link href={item.link} className="text-gray">{item.name}</Link>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="flex justify-center">
