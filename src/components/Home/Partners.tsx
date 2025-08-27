@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Badge } from "components/shared"
 
 const partners = [
@@ -39,7 +40,7 @@ export const Partners = () => {
         <div className="grid grid-cols-3 md:grid-cols-7 items-center gap-8 md:gap-11 mt-4">
           {partners.map((pat, key) => (
             <div key={key} className={` ${pat.id === 7 && 'md:flex justify-center'}`}>
-              <img src={`/images/${pat.image}`} alt={pat.image} />
+              <Image src={`/images/${pat.image}`} alt={pat.image} width='125' height='49' />
             </div>
           ))}
         </div>

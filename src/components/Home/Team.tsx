@@ -1,4 +1,6 @@
 import { Badge } from "components/shared"
+import Image from "next/image"
+
 
 const team = [
   {
@@ -29,7 +31,7 @@ export const Team = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10  md:max-w-[683px]">
               {team.map((t, key) => (
                 <div key={key}>
-                  <img src={`/images/${t.img}`} alt={t.title} />
+                  <Image src={`/images/${t.img}`} alt={t.title} width='350' height='350' />
                   <h2 className=" text-xl font-medium text-dark mt-2">{t.title}</h2>
                   <p className="text-gray">{t.role}</p>
                 </div>

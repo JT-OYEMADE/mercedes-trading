@@ -52,6 +52,7 @@ export default {
       backgroundImage: {
         'home-bg': "url('/images/home-hero-bg.png')",
         'footer-bg': "url('/images/footer-bg.png')",
+        'footer-mobile': "url('/images/footer-mobile.png')",
       },
     },
   },

@@ -84,7 +84,7 @@ export const footerData = [
 export const Footer = () => {
   return (
     <footer className="p-[18px] md:p-6 -tracking-[0.04em] rounded-[20px] md:rounded-[40px] ">
-      <div className='pt-24 relative bg-footer-bg bg-cover bg-no-repeat min-h-fit sm:min-h-0 rounded-[20px] md:rounded-[40px]'>
+      <div className='pt-24 relative bg-footer-mobile md:bg-footer-bg bg-cover bg-no-repeat min-h-fit sm:min-h-0 rounded-[20px] md:rounded-[40px]'>
         <div className="container">
           <div className=" md:w-[568px] mx-auto flex flex-col items-center text-center text-white space-y-3 mb-[66px]">
             <h1 className=" text-[40px] md:text-6xl leading-[40px] md:leading-[65px] font-semibold">Explore Our Global <br /> Capabilities</h1>
