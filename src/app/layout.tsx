@@ -3,9 +3,10 @@ import { Geist } from "next/font/google";
 import "./globals.scss";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+  display: "swap",
+  variable: "--font-geist-sans",
+})
 
 
 export const metadata: Metadata = {

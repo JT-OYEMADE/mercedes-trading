@@ -1,4 +1,4 @@
-import { Footer } from 'components/shared';
+import { Footer, Navbar } from 'components/shared';
 
 export default function RootLayout({
   children,
@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className='relative'>
-      {/* <Navbar /> */}
+      <Navbar />
       <main className=''>{children}</main>
       <Footer />
     </div>

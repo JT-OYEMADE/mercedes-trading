@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import { RiMagicLine } from 'react-icons/ri';
 
 interface BadgeProps {
   icon?: ReactNode;

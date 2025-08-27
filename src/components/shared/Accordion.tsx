@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { RiArrowDownSLine, RiArrowDownWideLine, RiArrowUpSLine, RiArrowUpWideLine } from 'react-icons/ri';
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
 interface AccordionProps {
   title: string;

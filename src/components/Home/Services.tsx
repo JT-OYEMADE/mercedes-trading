@@ -1,9 +1,5 @@
 import { Badge } from "components/shared"
 
-const services = [
-
-]
-
 export const Services = () => {
   return (
     <section className='py-6 lg:py-28 bg-[#FEFEFE] -tracking-[0.04em]'>
