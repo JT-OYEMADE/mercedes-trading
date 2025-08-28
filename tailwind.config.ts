@@ -25,7 +25,6 @@ export default {
         primary: {
           DEFAULT: '#12229D',
           light: '#F6F7FF',
-          lighter: '#F6F7FF',
         },
         dark: {
           DEFAULT: '#2A2A2A',
@@ -51,6 +50,7 @@ export default {
       },
       backgroundImage: {
         'home-bg': "url('/images/home-hero-bg.png')",
+        'service-bg': "url('/images/service-bg.png')",
         'footer-bg': "url('/images/footer-bg.png')",
         'footer-mobile': "url('/images/footer-mobile.png')",
       },

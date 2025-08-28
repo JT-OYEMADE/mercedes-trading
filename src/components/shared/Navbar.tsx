@@ -37,8 +37,8 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  // const transparentRouteNav = ["/", "/about", "/faq"];
-  // const isTransparentNav = transparentRouteNav.includes(pathName);
+  const darkNavLink = ["/services"];
+  const isDarkNav = darkNavLink.includes(pathname);
 
   return (
     <div>
@@ -118,17 +118,17 @@ export const Navbar = () => {
         </Dialog>
       </Transition>
 
-      <div className={`w-full z-50 md:z-[100] fixed  py-4 md:px-6 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-md shadow-sm top-0' : 'bg-transparent top-5'}`}>
+      <div className={`w-full z-50 md:z-[100] fixed  py-4 md:px-6 transition-all duration-300 ${isScrolled ? 'bg-[#F6F7FF]/70 backdrop-blur-md shadow-sm top-0' : 'bg-transparent top-5'}`}>
         <div className={`container ${isScrolled ? ' md:px-0' : 'px-8'}   flex items-center justify-between`}>
           <div className='flex items-center gap-8'>
             <Link href='/'>
-              <img className='h:10 md:h-12 w-auto' src={isScrolled ? '/images/mercedes-blue-logo.svg' : '/images/mercedes-logo-white.svg'} alt='Mercedes' />
+              <img className='h:10 md:h-12 w-auto' src={isScrolled || isDarkNav ? '/images/mercedes-blue-logo.svg' : '/images/mercedes-logo-white.svg'} alt='Mercedes' />
             </Link>
 
             <div className={`hidden lg:flex gap-6 py-1 px-2 rounded-xl`}>
               {navigationItems.map(({ label, href }, key) => (
                 <Link href={href} key={key}>
-                  <p className={`font-normal  text-sm ${isScrolled ? 'text-primary' : 'text-[#FEFEFE]'}`}>{label}</p>
+                  <p className={`font-normal ${isDarkNav && 'text-dark'} text-sm ${isScrolled ? 'text-primary' : 'text-[#FEFEFE]'}`}>{label}</p>
                 </Link>
               ))}
             </div>
@@ -138,7 +138,7 @@ export const Navbar = () => {
             <Link href={`/`}>
               <Button
                 label='Contact Us'
-                state={isScrolled ? 'primary' : 'light'}
+                state={isScrolled || isDarkNav ? 'primary' : 'light'}
               />
             </Link>
           </div>
