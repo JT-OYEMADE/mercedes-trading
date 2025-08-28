@@ -11,8 +11,6 @@ import { Dialog, Transition, TransitionChild, DialogPanel } from '@headlessui/re
 
 
 const navigationItems = [
-  { label: 'About Us', href: '/about' },
-  { label: 'Services', href: '/services' },
   {
     label: 'Product',
     href: '/product',
@@ -37,7 +35,7 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const darkNavLink = ["/services", "/gallery", "/product"];
+  const darkNavLink = ["/contact", "/gallery", "/product"];
   const isDarkNav = darkNavLink.includes(pathname);
 
   return (
@@ -135,7 +133,7 @@ export const Navbar = () => {
           </div>
 
           <div className='hidden lg:flex gap-4'>
-            <Link href={`/`}>
+            <Link href={`/contact`}>
               <Button
                 label='Contact Us'
                 state={isScrolled || isDarkNav ? 'primary' : 'light'}
