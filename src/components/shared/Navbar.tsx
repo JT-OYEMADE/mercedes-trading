@@ -37,7 +37,7 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const darkNavLink = ["/services"];
+  const darkNavLink = ["/services", "/gallery"];
   const isDarkNav = darkNavLink.includes(pathname);
 
   return (
