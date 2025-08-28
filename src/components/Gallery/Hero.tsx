@@ -62,24 +62,21 @@ const gallery = [
 
 export const Hero = () => {
   return (
-    <section className='-tracking-[0.04em] mb-52 py-6 lg:py-52 bg-service-bg'>
+    <section className='-tracking-[0.04em] md:mb-[500px] bg-primary-light py-6 lg:py-52 md:h-[40lvh] bg-service-bg'>
       <div className='container'>
-        <div className=" relative">
-
-          <div className="max-w-[538px] mx-auto text-center">
-            <h2 className='text-dark text-[30px] md:text-[60px] font-medium md:leading-[100%]'>
-              Gallery
-            </h2>
-            <p className="text-gray mt-3">Take a visual journey through how MTTL brings commodities from source to market.</p>
-          </div>
-          {/* <div className=" grid grid-cols-3 md:grid-cols-6 absolute  ">
-            {gallery.map((g, key) => (
-              <div key={key} className="w-full h-full">
-                <img src={`/images/${g.pic}`} alt={g.pic} className="w-full h-full" />
-              </div>
-            ))}
-          </div> */}
+        <div className="max-w-[538px] mx-auto text-center">
+          <h2 className='text-dark text-[30px] md:text-[60px] font-medium md:leading-[100%]'>
+            Gallery
+          </h2>
+          <p className="text-gray mt-3">Take a visual journey through how MTTL brings commodities from source to market.</p>
         </div>
+        {/* <div className=" grid grid-cols-3 grid-rows-3 md:grid-cols-6  mt-20">
+          {gallery.map((g, key) => (
+            <div key={key} className="w-[250px] ">
+              <img src={`/images/${g.pic}`} alt={g.pic} className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div> */}
       </div>
     </section>
   )

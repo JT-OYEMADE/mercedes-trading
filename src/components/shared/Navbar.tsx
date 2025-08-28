@@ -14,8 +14,8 @@ const navigationItems = [
   { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/services' },
   {
-    label: 'FAQ',
-    href: '/faq',
+    label: 'Product',
+    href: '/product',
   },
   { label: 'Gallery', href: '/gallery' },
 ];
@@ -37,7 +37,7 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const darkNavLink = ["/services", "/gallery"];
+  const darkNavLink = ["/services", "/gallery", "/product"];
   const isDarkNav = darkNavLink.includes(pathname);
 
   return (
@@ -119,7 +119,7 @@ export const Navbar = () => {
       </Transition>
 
       <div className={`w-full z-50 md:z-[100] fixed  py-4 md:px-6 transition-all duration-300 ${isScrolled ? 'bg-[#F6F7FF]/70 backdrop-blur-md shadow-sm top-0' : 'bg-transparent top-5'}`}>
-        <div className={`container ${isScrolled ? ' md:px-0' : 'px-8'}   flex items-center justify-between`}>
+        <div className={`container ${isScrolled || isDarkNav ? ' md:px-0' : 'px-8'}   flex items-center justify-between`}>
           <div className='flex items-center gap-8'>
             <Link href='/'>
               <img className='h:10 md:h-12 w-auto' src={isScrolled || isDarkNav ? '/images/mercedes-blue-logo.svg' : '/images/mercedes-logo-white.svg'} alt='Mercedes' />
@@ -148,7 +148,7 @@ export const Navbar = () => {
             className='-m-2.5 p-2.5 text-gray-700 lg:hidden'
             onClick={() => setSidebarOpen(true)}>
             <span className='sr-only'>Open sidebar</span>
-            <HiMiniBars3 className={`h-6 md:h-8 w-6 md:w-8 ${isScrolled ? 'text-primary' : 'text-white'} font-bold`} aria-hidden='true' />
+            <HiMiniBars3 className={`h-6 md:h-8 w-6 md:w-8 ${isScrolled || isDarkNav ? 'text-primary' : 'text-white'} font-bold`} aria-hidden='true' />
           </button>
         </div>
       </div>
