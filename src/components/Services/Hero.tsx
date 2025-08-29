@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const Hero = () => {
   return (
-    <section className='py-20 lg:py-28 bg-service-bg md:h-[60lvh] 2xl:h-[40lvh] -tracking-[0.04em] md:mb-[500px]'>
+    <section className='py-20 lg:py-28 bg-service-bg md:h-[70lvh] 2xl:h-[40lvh] -tracking-[0.04em] md:mb-[500px]'>
       <div className='container'>
         <div className="flex flex-col md:flex-row md:px-8 gap-10 md:gap-[130px]">
           <div className="md:w-1/2">
