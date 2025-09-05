@@ -11,10 +11,10 @@ import { Dialog, Transition, TransitionChild, DialogPanel } from '@headlessui/re
 
 
 const navigationItems = [
-  {
-    label: 'Product',
-    href: '/product',
-  },
+  // {
+  //   label: 'Product',
+  //   href: '/product',
+  // },
   { label: 'Gallery', href: '/gallery' },
 ];
 
@@ -36,7 +36,7 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const darkNavLink = ["/contact", "/gallery", "/product"];
-  const isDarkNav = darkNavLink.includes(pathname);
+  const isDarkNav = darkNavLink.includes(pathname) || darkNavLink.some((link) => pathname?.startsWith(link + '/'));
 
   return (
     <div>

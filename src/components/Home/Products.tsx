@@ -1,21 +1,26 @@
 import { Badge } from "components/shared"
+import Link from "next/link"
 
 const products = [
   {
     title: 'Herbs, Spices & Botanicals',
-    img: 'product-1.png'
+    img: 'product-1.png',
+    link: 'herbs-spices-botanicals'
   },
   {
     title: 'Nuts & Oil Seeds',
-    img: 'product-2.png'
+    img: 'product-2.png',
+    link: 'nuts-and-oil-seeds'
   },
   {
     title: 'Solid Minerals',
-    img: 'product-3.png'
+    img: 'product-3.png',
+    link: 'solid-minerals'
   },
   {
     title: 'Energy & Natural Resources',
-    img: 'product-4.png'
+    img: 'product-4.png',
+    link: 'energy-and-natural-resources'
   },
 ]
 
@@ -33,10 +38,10 @@ export const Products = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {products.map((p, key) => (
-              <div key={key} className="relative">
+              <Link href={`/product/${p.link}`} key={key} className="relative cursor-pointer">
                 <img src={`/images/${p.img}`} alt={p.title} />
                 <h2 className='text-white max-w-[200px] text-[40px] font-medium leading-10 absolute bottom-6 left-5'>{p.title}</h2>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
