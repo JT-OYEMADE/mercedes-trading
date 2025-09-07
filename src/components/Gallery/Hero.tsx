@@ -5,59 +5,110 @@ const gallery = [
     pic: "gallery-1.png"
   },
   {
-    pic: "gallery-2.png"
+    pic: "gallery-1.png"
   },
   {
-    pic: "gallery-3.png"
+    pic: "gallery-1.png"
   },
   {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  {
+    pic: "gallery-1.png"
+  },
+  // {
+  //   pic: "gallery-2.png"
+  // },
+  // {
+  //   pic: "gallery-3.png"
+  // },
+  // {
 
-    pic: "gallery-4.png"
-  },
-  {
-    pic: "gallery-5.png"
-  },
-  {
-    pic: "gallery-6.png"
-  },
-  {
-    pic: "gallery-7.png"
-  },
-  {
-    pic: "gallery-8.png"
-  },
-  {
-    pic: "gallery-9.png"
-  },
-  {
-    pic: "gallery-10.png"
-  },
-  {
-    pic: "gallery-11.png"
-  },
-  {
-    pic: "gallery-12.png"
-  },
-  {
-    pic: "gallery-13.png"
-  },
-  {
-    pic: "gallery-14.png"
-  },
-  {
-    pic: "gallery-15.png"
-  },
-  {
-    pic: "gallery-16.png"
+  //   pic: "gallery-4.png"
+  // },
+  // {
+  //   pic: "gallery-5.png"
+  // },
+  // {
+  //   pic: "gallery-6.png"
+  // },
+  // {
+  //   pic: "gallery-7.png"
+  // },
+  // {
+  //   pic: "gallery-8.png"
+  // },
+  // {
+  //   pic: "gallery-9.png"
+  // },
+  // {
+  //   pic: "gallery-10.png"
+  // },
+  // {
+  //   pic: "gallery-11.png"
+  // },
+  // {
+  //   pic: "gallery-12.png"
+  // },
+  // {
+  //   pic: "gallery-13.png"
+  // },
+  // {
+  //   pic: "gallery-14.png"
+  // },
+  // {
+  //   pic: "gallery-15.png"
+  // },
+  // {
+  //   pic: "gallery-16.png"
 
-  },
+  // },
 
-  {
-    pic: "gallery-17.png"
-  },
-  {
-    pic: "gallery-18.png"
-  }
+  // {
+  //   pic: "gallery-17.png"
+  // },
+  // {
+  //   pic: "gallery-18.png"
+  // }
 ]
 
 export const Hero = () => {
@@ -70,13 +121,13 @@ export const Hero = () => {
           </h2>
           <p className="text-gray mt-3">Take a visual journey through how MTTL brings commodities from source to market.</p>
         </div>
-        {/* <div className=" grid grid-cols-3 grid-rows-3 md:grid-cols-6  mt-20">
+        <div className=" grid grid-cols-3 grid-rows-3 md:grid-cols-6 gap-2.5 mt-20">
           {gallery.map((g, key) => (
-            <div key={key} className="w-[250px] ">
-              <img src={`/images/${g.pic}`} alt={g.pic} className="w-full h-full object-cover" />
+            <div key={key} className=" ">
+              <img src={`/images/${g.pic}`} alt={g.pic} className="" />
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   )
