@@ -15,6 +15,15 @@ const navigationItems = [
   //   label: 'Product',
   //   href: '/product',
   // },
+  // {
+  //   label: 'Products',
+  //   submenu: [
+  //     { label: 'Herbs, Spices & Botanicals', href: '/product/herbs-spices-botanicals' },
+  //     { label: 'Nuts & Oil Seeds', href: '/product/nuts-and-oil-seeds' },
+  //     { label: 'Energy & Natural Resources', href: '/product/energy-and-natural-resources' },
+  //     { label: 'Solid Minerals', href: '/product/solid-minerals' },
+  //   ],
+  // },
   { label: 'Gallery', href: '/gallery' },
 ];
 

@@ -18,7 +18,7 @@ export const Services = () => {
             {/* one */}
             <div className="flex flex-col md:flex-row gap-6">
               <div className="w-full md:w-1/2">
-                <Image src="/images/strategic-trading.png" alt="strategic-trading" width='500' height='500' />
+                <Image src="/images/strategic-trading.webp" alt="strategic-trading" width='500' height='500' />
 
               </div>
               <div className="w-full md:w-1/2 space-y-5 md:px-5 md:py-[30px]">
@@ -38,7 +38,7 @@ export const Services = () => {
             {/* two */}
             <div className="flex flex-col md:flex-row-reverse gap-6">
               <div className="w-full md:w-1/2">
-                <Image src="/images/swift-logistics.png" alt="swift-logistics" width='500' height='500' />
+                <Image src="/images/swift-logistics.webp" alt="swift-logistics" width='500' height='500' />
               </div>
               <div className="w-full md:w-1/2 space-y-5 md:px-5 md:py-[30px]">
                 <h2 className="text-black text-[30px] md:text-[40px] leading-[35px] ">Swift Logistics</h2>
@@ -55,7 +55,7 @@ export const Services = () => {
             {/* three */}
             <div className="flex flex-col md:flex-row gap-6">
               <div className="w-full md:w-1/2">
-                <Image src="/images/expert-consulting.png" alt="expert-consulting" width='500' height='500' />
+                <Image src="/images/expert-consulting.webp" alt="expert-consulting" width='500' height='500' />
               </div>
               <div className="w-full md:w-1/2 space-y-5 md:px-5 md:py-[30px]">
                 <h2 className="text-black text-[30px] md:text-[40px] leading-[35px] ">Expert Consulting</h2>

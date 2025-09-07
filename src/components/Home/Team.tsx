@@ -7,13 +7,13 @@ import { useState } from "react"
 const team = [
   {
     title: "Vincent Uche",
-    img: "coo.png",
+    img: "coo.webp",
     role: "Co founder & COO",
     bio: "Vincent is an accomplished agribusiness professional with over a decade of hands-on experience in the agro-commodity sector. With a diverse background spanning operations, supply chain management and trade development, he has built his career around driving efficiency, sustainability, and value creation across commodity markets. Chidera has successfully managed aggregation networks, optimized processing systems and overseen large-scale commodity transactions —gaining both local expertise and international exposure. His leadership is grounded in precision, discipline, and practical problem-solving—ensuring that operational execution aligns with long-term strategic growth.As Chief Operating Officer of Mercedes Trading and Transport Ltd. (MTTL), Chidera brings this wealth of experience into partnership with the company’s vision. He is responsible for steering operational excellence, strengthening supply chains, and advancing Mercedes’ mission to deliver high-quality commodities with reliability and consistency and position MTTL as a trusted and resilient player in the global commodity space.He is a graduate of Chemistry from the National Open University of Nigeria.",
   },
   {
     title: "Sophia Ebikwo",
-    img: "cos.png",
+    img: "cos.webp",
     role: "Co founder & CMO",
     bio: "As the Co-Founder and Chief Marketing Officer of Mercedes Trading and Transport Ltd, Sophia Ebikwo brings extensive experience in marketing, brand strategy and stakeholder engagement to the agro-commodity sector. Sophia has been instrumental in shaping MTTL’s brand presence online and driving client engagement initiatives. She is passionate about connecting Nigerian commodities to global markets, educating buyers and building trust through consistent compelling storytelling. Under her leadership, MTTL has strengthened its visibility, enhanced investor confidence and established a brand identity that reflects professionalism, reliability and forward-thinking in the global agro-commodities space. She holds a BSc in International Relations and Diplomacy from Salem University, Nigeria and a Postgraduate Diploma in Education from the University of Ilorin and has built a strong track record in creating high-impact campaigns and positioning companies for growth.",
   },
@@ -35,8 +35,7 @@ export const Team = () => {
             <div className="text-center md:max-w-[683px] w-full">
               <h2 className="text-dark text-[30px] md:text-[40px] font-medium md:leading-[100%] mt-4">Meet the Team</h2>
               <p className="text-sm md:text-2xl text-gray mt-3">
-                Meet the experienced minds driving our operations a passionate team with deep expertise in commodities,
-                logistics, finance, and development.
+                Meet the experienced minds driving our operations a passionate team with deep expertise in supply chain, finance, marketing and project management.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10  md:max-w-[683px]">
