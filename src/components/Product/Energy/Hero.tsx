@@ -8,10 +8,10 @@ export const Hero = () => {
           <h2 className='text-dark text-[30px] md:text-[60px] font-medium md:leading-[100%]'>
             Energy & Natural Resources
           </h2>
-          <p className="text-gray mt-3">Africa’s soil is rich with plants that have been cherished for centuries for their flavor, health, and wellness benefits. At MTTL, we source and export high-quality herbs, spices, and botanicals that meet international standards, carefully harvested and prepared to retain their natural potency. Our products include dried split ginger, turmeric and hibiscus flowers.</p>
+          <p className="text-gray mt-3">We supply raw materials that fuel industries and support infrastructure across the globe. From clean energy alternatives to construction essentials, our exports are chosen for quality and long-term reliability.</p>
         </div>
         <div className="mx-auto">
-          <img src='/images/herbs.png' alt='' />
+          <img src='/images/energy.png' alt='' />
         </div>
       </div>
     </section>

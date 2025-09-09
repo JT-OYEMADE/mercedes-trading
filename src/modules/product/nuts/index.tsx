@@ -1,6 +1,6 @@
 import { FAQ } from "components/Home";
-import { Features } from "components/Product";
 import { Hero } from "components/Product/Nuts/Hero";
+import { Features } from "components/Product/Nuts/Features";
 
 
 const Nuts = () => {
