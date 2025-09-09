@@ -7,15 +7,15 @@ export const footerData = [
     list: [
       {
         name: 'About Us',
-        link: '/',
+        link: '',
       },
       {
         name: 'Service',
-        link: '/',
+        link: '',
       },
       {
         name: 'FAQ',
-        link: '/',
+        link: '',
       },
     ],
   },
@@ -24,15 +24,15 @@ export const footerData = [
     list: [
       {
         name: 'Privacy Policy',
-        link: '/',
+        link: '',
       },
       {
         name: 'Terms of Service',
-        link: '/',
+        link: '',
       },
       {
         name: 'Cookie Policy',
-        link: '/',
+        link: '',
       },
     ],
   },
@@ -41,19 +41,19 @@ export const footerData = [
     list: [
       {
         name: 'Instagram',
-        link: '/',
+        link: 'https://www.instagram.com/mercedestrading_ltd?igsh=MXNxdWhsOGN4anB6&utm_source=qr',
       },
       {
-        name: 'Twitter (X)',
-        link: '',
+        name: 'Tiktok',
+        link: 'https://www.tiktok.com/@mercedes_trading?_t=ZS-8zYlGTcDAnq&_r=1',
       },
       {
         name: 'LinkedIn',
-        link: '/',
+        link: 'https://www.linkedin.com/company/mercedes-trading-transport-ltd/',
       },
       {
         name: 'Facebook',
-        link: '/',
+        link: 'https://www.facebook.com/share/16rM9EtypP/',
       },
     ],
   },
@@ -62,11 +62,11 @@ export const footerData = [
     list: [
       {
         name: '📍Lagos, Nigeria',
-        link: '/',
+        link: '',
       },
       {
         name: '📍 Kabba, Kogi State',
-        link: '/',
+        link: '',
       },
       {
         name: '📞 +234 708 1232 817',
@@ -108,7 +108,7 @@ export const Footer = () => {
                     <div className="mt-3">
                       {x.list.map((item, key) => (
                         <div key={key}>
-                          <Link href={item.link} className="text-gray">{item.name}</Link>
+                          <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-gray">{item.name}</Link>
                         </div>
                       ))}
                     </div>

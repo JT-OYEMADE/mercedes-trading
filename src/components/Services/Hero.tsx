@@ -103,17 +103,20 @@ export const Hero = () => {
                 mttlmited@email.com
               </Link>
               <div className="flex gap-4 mt-4 text-dark-light underline">
-                <Link href="mailto:support@usetechrevolve.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.instagram.com/mercedestrading_ltd?igsh=MXNxdWhsOGN4anB6&utm_source=qr" target="_blank" rel="noopener noreferrer">
                   Instagram
                 </Link>
-                <Link href="mailto:support@usetechrevolve.com" target="_blank" rel="noopener noreferrer">
-                  Twitter (X)
+                <Link href="https://www.tiktok.com/@mercedes_trading?_t=ZS-8zYlGTcDAnq&_r=1" target="_blank" rel="noopener noreferrer">
+                  TikTok
                 </Link>
-                <Link href="mailto:support@usetechrevolve.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/company/mercedes-trading-transport-ltd/" target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </Link>
-                <Link href="mailto:support@usetechrevolve.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.facebook.com/share/16rM9EtypP/" target="_blank" rel="noopener noreferrer">
                   Facebook
+                </Link>
+                <Link href="https://wa.me/message/UBU472P27QGPA1" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
                 </Link>
               </div>
             </div>
