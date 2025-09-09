@@ -69,8 +69,8 @@ export const footerData = [
         link: '',
       },
       {
-        name: '📞 +234 708 1232 817',
-        link: 'tel:07078298382',
+        name: '📞 +234 902 799 1837',
+        link: 'tel:09027991837',
       },
       {
         name: '📧 mercedescommodities@gmail.com',
