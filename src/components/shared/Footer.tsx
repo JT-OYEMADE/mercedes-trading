@@ -93,7 +93,9 @@ export const Footer = () => {
           <div className=" md:w-[568px] mx-auto flex flex-col items-center text-center text-white space-y-3 mb-[66px]">
             <h1 className=" text-[40px] md:text-6xl leading-[40px] md:leading-[65px] font-semibold">Explore Our Global <br /> Capabilities</h1>
             <p className=" leading-[22px] font-medium">From sourcing and shipping to strategy and support, we’re equipped to move your business beyond borders.</p>
-            <Button label='Contact Us' state="light" />
+            <Link href='/contact'>
+              <Button label='Contact Us' state="light" />
+            </Link>
           </div>
         </div>
         <div className="px-4 pb-5">
