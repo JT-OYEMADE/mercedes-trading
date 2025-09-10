@@ -58,7 +58,7 @@ export const Hero = () => {
       if (response.ok) {
         setSubmitStatus("success")
         // Reset form
-        setFormData({
+        console.log({
           fullName: "",
           companyName: "",
           email: "",
@@ -193,8 +193,9 @@ export const Hero = () => {
                   onChange={(e: any) => handleInputChange("deliveryTimeline", e.target.value)}
                   required
                 />
-                <TextAreaField
+                <Textfield
                   id="additionalNotes"
+                  key="additionalNotes"
                   placeholder="Additional Note/Requirement"
                   value={formData.additionalNotes}
                   onChange={(e: any) => handleInputChange("additionalNotes", e.target.value)}
