@@ -2,7 +2,7 @@
 const features = [
   {
     id: 1,
-    label: 'Our minerals are supplied in their raw, export-ready state, making them adaptable to various global processing needs.'
+    label: 'Our minerals are supplied in their standardized, export-ready state, making them adaptable to various global processing needs.'
   },
   {
     id: 2,

@@ -7,24 +7,24 @@ const questionAndAnswers = [
   {
     question: 'What types of commodities do you trade?',
     answer:
-      'We deal in agricultural products like cashew, cocoa, and sesame, as well as critical minerals such as lithium and tantalite.',
+      'We trade agricultural products such as cashew, cocoa, and sesame, along with critical minerals like lithium and tantalite.',
   },
   {
     question: 'Can you help me with export financing?',
     answer:
-      'We deal in agricultural products like cashew, cocoa, and sesame, as well as critical minerals such as lithium and tantalite.',
+      'Yes, we provide guidance and support on export financing to help clients access the capital they need for international trade.',
   },
   {
     question: 'Do you offer logistics within Nigeria only?',
     answer:
-      'We deal in agricultural products like cashew, cocoa, and sesame, as well as critical minerals such as lithium and tantalite.',
+      'No, our logistics services cover both local transportation within Nigeria and international shipping to various destinations.',
   },
   {
     question: 'Do you work with international clients?',
     answer:
-      'We deal in agricultural products like cashew, cocoa, and sesame, as well as critical minerals such as lithium and tantalite.',
+      'Yes, we work with both local and international clients, facilitating trade across borders with reliable services.',
   },
-]
+];
 
 export const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
