@@ -17,7 +17,7 @@ const trade = [
 
 export const Moving = () => {
   return (
-    <section className='py-6 lg:py-28 bg-white -tracking-[0.04em]'>
+    <section id="about" className='py-6 lg:py-28 bg-white -tracking-[0.04em]'>
       <div className='container'>
         <div className='flex flex-col md:flex-row gap- md:gap-x-28'>
           <div className='w-full md:w-[40%]'>

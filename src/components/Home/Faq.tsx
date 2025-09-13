@@ -1,6 +1,7 @@
 'use client'
 
 import { Accordion, Button } from "components/shared";
+import Link from "next/link";
 import { useState } from "react";
 
 const questionAndAnswers = [
@@ -44,7 +45,9 @@ export const FAQ = () => {
                 </h2>
                 <div className="mt-6">
                   <p className="text-gray mb-1">Reach Out to Us</p>
-                  <Button label='Contact Us' />
+                  <Link href='/contact'>
+                    <Button label='Contact Us' />
+                  </Link>
                 </div>
               </div>
             </div>

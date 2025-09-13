@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link"
 import { Button } from "./Button"
 
@@ -7,15 +9,24 @@ export const footerData = [
     list: [
       {
         name: 'About Us',
-        link: '',
+        link: 'about',
+        isScroll: true
       },
       {
-        name: 'Service',
-        link: '',
+        name: 'Herbs, Spices & Botanicals',
+        link: '/product/herbs-spices-botanicals',
       },
       {
-        name: 'FAQ',
-        link: '',
+        name: 'Nuts & Oil Seeds',
+        link: '/product/nuts-and-oil-seeds',
+      },
+      {
+        name: 'Energy & Natural Resources',
+        link: '/product/energy-and-natural-resources',
+      },
+      {
+        name: 'Solid Minerals',
+        link: '/product/solid-minerals',
       },
     ],
   },
@@ -86,6 +97,15 @@ export const footerData = [
 
 
 export const Footer = () => {
+  const handleScrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  }
   return (
     <footer className="p-[18px] md:p-6 -tracking-[0.04em] rounded-[20px] md:rounded-[40px] ">
       <div className='pt-24 relative bg-footer-mobile md:bg-footer-bg bg-cover bg-no-repeat min-h-fit sm:min-h-0 rounded-[20px] md:rounded-[40px]'>
@@ -114,7 +134,23 @@ export const Footer = () => {
                     <div className="mt-3">
                       {x.list.map((item, key) => (
                         <div key={key}>
-                          <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-gray">{item.name}</Link>
+                          {item.isScroll ? (
+                            <button
+                              onClick={() => handleScrollToSection(item.link)}
+                              className="text-gray hover:text-primary transition-colors cursor-pointer text-left"
+                            >
+                              {item.name}
+                            </button>
+                          ) : (
+                            <Link
+                              href={item.link}
+                              target={item.link.startsWith("http") ? "_blank" : undefined}
+                              rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                              className="text-gray hover:text-primary transition-colors"
+                            >
+                              {item.name}
+                            </Link>
+                          )}
                         </div>
                       ))}
                     </div>
