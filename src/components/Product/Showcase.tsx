@@ -2,7 +2,7 @@ const products = [
   {
     name: "Hibiscus Flower",
     description:
-      "Premium dried hibiscus flowers known for their vibrant color and tart, cranberry-like flavor. Rich in antioxidants and vitamin C, perfect for teas and natural beverages.",
+      "Premium dried hibiscus flowers known for their vibrant color and tart, cranberry-like flavor. Rich in antioxidants and vitamin C, perfect for teas and natural milk.",
   },
   {
     name: "Dried Split Ginger",

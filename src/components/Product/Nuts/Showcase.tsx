@@ -22,7 +22,7 @@ const products = [
   {
     name: "Tiger Nuts",
     description:
-      "Nutritious tiger nuts and their extracts including tiger nuts beverage and tiger nuts meal. A superfood with excellent health benefits.",
+      "Nutritious tiger nuts and their extracts including tiger nuts milk and tiger nuts meal. A superfood with excellent health benefits.",
   },
   {
     name: "Soybean",
