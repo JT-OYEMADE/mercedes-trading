@@ -34,9 +34,9 @@ const partners = [
 
 export const Partners = () => {
   return (
-    <section className='py-6 lg:py-[50px] bg-white -tracking-[0.04em]'>
+    <section id='record' className='py-6 lg:py-[50px] bg-white -tracking-[0.04em]'>
       <div className='container'>
-        <Badge text='Our track record' />
+        <Badge text='our track record' />
         <div className="grid grid-cols-3 md:grid-cols-7 items-center gap-8 md:gap-11 mt-4">
           {partners.map((pat, key) => (
             <div key={key} className={` ${pat.id === 7 && 'md:flex justify-center'}`}>

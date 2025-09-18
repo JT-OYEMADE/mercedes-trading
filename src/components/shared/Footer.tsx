@@ -5,13 +5,9 @@ import { Button } from "./Button"
 
 export const footerData = [
   {
-    header: 'Company',
+    header: 'Products',
     list: [
-      {
-        name: 'About Us',
-        link: 'about',
-        isScroll: true
-      },
+
       {
         name: 'Herbs, Spices & Botanicals',
         link: '/product/herbs-spices-botanicals',
@@ -31,19 +27,39 @@ export const footerData = [
     ],
   },
   {
-    header: 'Legals',
+    header: 'About Us',
     list: [
       {
-        name: 'Privacy Policy',
-        link: '',
+        name: 'Media',
+        link: '/gallery',
       },
       {
-        name: 'Terms of Service',
-        link: '',
+        name: 'Track record',
+        link: 'record',
+        isScroll: true
+      },
+      { name: "Who are we", link: "whoarewe", isScroll: true },
+      { name: "Vision", link: "vision", isScroll: true },
+      { name: "Our mission", link: "mission", isScroll: true },
+    ],
+  },
+  {
+    header: 'What we do',
+    list: [
+      {
+        name: 'Trading',
+        link: 'trading',
+        isScroll: true
       },
       {
-        name: 'Cookie Policy',
-        link: '',
+        name: 'Logistics',
+        link: 'logistics',
+        isScroll: true
+      },
+      {
+        name: 'Trade Consulting',
+        link: 'consulting',
+        isScroll: true
       },
     ],
   },
@@ -72,11 +88,15 @@ export const footerData = [
     header: 'Contact',
     list: [
       {
-        name: '📍Lagos, Nigeria',
+        name: '📍Amuwo Odofin, Lagos State',
         link: '',
       },
       {
         name: '📍 Kabba, Kogi State',
+        link: '',
+      },
+      {
+        name: '📍 Bida, Niger State',
         link: '',
       },
       {
@@ -88,8 +108,8 @@ export const footerData = [
         link: 'tel:07081232817',
       },
       {
-        name: '📧 mercedescommodities@gmail.com',
-        link: 'mailto:mercedescommodities@gmail.com',
+        name: '📧 info@mercedestrading.com',
+        link: 'mailto:info@mercedestrading.com',
       },
     ],
   },
@@ -127,7 +147,7 @@ export const Footer = () => {
                 </Link>
                 <p className="text-gray leading-snug">Mercedes Trading & <br /> Transport Limited (MTTL)</p>
               </div>
-              <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-20">
+              <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-10">
                 {footerData.map((x, i) => (
                   <div key={i}>
                     <h3 className="text-xl text-primary">{x.header}</h3>

@@ -5,7 +5,7 @@ export const Services = () => {
   return (
     <section className='py-6 lg:py-28 bg-[#FEFEFE] -tracking-[0.04em]'>
       <div className='container'>
-        <div className="max-w-[683px]">
+        <div id='trading' className="max-w-[683px]">
           <Badge text='our services' />
           <h2 className='text-dark text-[30px] md:text-[40px] font-medium md:leading-[100%] mt-4'>
             Powering Africa’s Path to  <br />{' '}
@@ -24,13 +24,14 @@ export const Services = () => {
               <div className="w-full md:w-1/2 space-y-5 md:px-5 md:py-[30px]">
                 <h2 className="text-black text-[30px] md:text-[40px] leading-[35px] ">Strategic Trading</h2>
                 <div className="space-y-7 text-sm md:text-xl text-dark-light">
-                  <p>Herbs & Spices: <span className="text-gray">Hibiscus Flower, Dried split Ginger, Turmeric.</span></p>
+                  {/* <p>Herbs & Spices: <span className="text-gray">Hibiscus Flower, Dried split Ginger, Turmeric.</span></p>
                   <p>Nuts & Oil Seeds: <span className="text-gray">Cashew Nuts, Shea Nuts, Cocoa, Sesame Seeds, Shea Nuts, Tiger Nuts, Soybean</span></p>
                   <p>Metals: <span className="text-gray">Tantalum, Lithium, Ilmenite, Rutile</span></p>
-                  <p>Energy: <span className="text-gray">Bio char, Ethically sourced charcoal, Palm Kernel Shells.</span></p>
+                  <p>Energy: <span className="text-gray">Bio char, Ethically sourced charcoal, Palm Kernel Shells.</span></p> */}
+                  <p>we provide strategic buying and selling of products and services that transforms Africa’s natural resources </p>
                   <ul className="list-disc pl-5">
                     <li>Exports</li>
-                    <li>Sourcing & Brokerage</li>
+                    <li id='logistics'>Sourcing & Brokerage</li>
                   </ul>
                 </div>
               </div>
@@ -47,7 +48,7 @@ export const Services = () => {
                   <ul className="list-disc pl-5">
                     <li>Haulage & Transportation services </li>
                     <li>Clearing & Forwarding</li>
-                    <li>Warehousing & Fulfilment services</li>
+                    <li id='consulting'>Warehousing & Fulfilment services</li>
                   </ul>
                 </div>
               </div>

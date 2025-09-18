@@ -17,7 +17,7 @@ const trade = [
 
 export const Moving = () => {
   return (
-    <section id="about" className='py-6 lg:py-28 bg-white -tracking-[0.04em]'>
+    <section id="whoarewe" className='py-6 lg:py-28 bg-white -tracking-[0.04em]'>
       <div className='container'>
         <div className='flex flex-col md:flex-row gap- md:gap-x-28'>
           <div className='w-full md:w-[40%]'>
@@ -46,7 +46,7 @@ export const Moving = () => {
                 port, we are there, ensuring quality, trust and excellence at every step.
               </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-y-3 gap-x-[27px]'>
+            <div id='vision' className='grid grid-cols-1 md:grid-cols-3 gap-y-3 gap-x-[27px]'>
               {trade.map((t, key) => (
                 <div key={key} className='bg-gray-light rounded-[15px] p-5'>
                   <h2 className=' text-[30px] text-dark font-medium leading-[35px]'>{t.stat}+</h2>
@@ -54,7 +54,7 @@ export const Moving = () => {
                 </div>
               ))}
             </div>
-            <div>
+            <div id='mission'>
               <Badge text='our vision' />
               <p className='text-sm md:text-2xl text-gray mt-2'>To become the leading global trading and operating platform for simplifying access to commodities in Africa.</p>
             </div>
