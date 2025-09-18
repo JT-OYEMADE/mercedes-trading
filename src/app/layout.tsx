@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "international trade",
     "Mercedes Trading",
   ],
+  icons: {
+    icon: ["/favicon.ico"],
+  },
   authors: [{ name: "Mercedes Trading" }],
   creator: "Mercedes Trading",
   publisher: "Mercedes Trading",
