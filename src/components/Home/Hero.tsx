@@ -10,7 +10,7 @@ export const Hero = () => {
               🌍 Powering African exports with ease.
             </div>
             <h1 className=" text-[40px] md:text-6xl leading-[40px] md:leading-[65px] font-semibold mt-2 mb-3">Unlocking <br /> Africa’s Richest Resources</h1>
-            <p className=" leading-[22px] font-medium">Trading & Transporting Africa’s valuable commodities to global markets through reliable sourcing, seamless logistics, and expert consulting.</p>
+            <p className=" leading-[22px] font-medium">Trading & Transporting Africa’s valuable commodities to global markets through reliable sourcing, seamless logistics, and expert advisory.</p>
             <div className="flex flex-col md:justify-center md:flex-row gap-x-2 gap-y-4 mt-3 w-full">
               <Button
                 label="Learn More"

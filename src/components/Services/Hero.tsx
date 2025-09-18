@@ -216,7 +216,7 @@ export const Hero = () => {
                 />
                 <Textfield
                   id="quantity"
-                  placeholder="Quantity required per (MT)"
+                  placeholder="Quantity (Metrics Tonnes)"
                   value={formData.quantity}
                   onChange={(e: any) => handleInputChange("quantity", e.target.value)}
                   required

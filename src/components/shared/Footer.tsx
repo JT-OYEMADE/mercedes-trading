@@ -57,7 +57,7 @@ export const footerData = [
         isScroll: true
       },
       {
-        name: 'Trade Consulting',
+        name: 'Trade Advisory',
         link: 'consulting',
         isScroll: true
       },

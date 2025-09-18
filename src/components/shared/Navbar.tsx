@@ -199,7 +199,7 @@ const navigationItems: NavigationItem[] = [
     submenu: [
       { label: "Trading", href: "trading", isScroll: true },
       { label: "Logistics", href: "logistics", isScroll: true },
-      { label: "Trade Consulting", href: "consulting", isScroll: true },
+      { label: "Trade Advisory", href: "consulting", isScroll: true },
     ],
   },
   {

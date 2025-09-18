@@ -59,9 +59,9 @@ export const Services = () => {
                 <Image src="/images/expert-consulting.webp" alt="expert-consulting" width='500' height='500' />
               </div>
               <div className="w-full md:w-1/2 space-y-5 md:px-5 md:py-[30px]">
-                <h2 className="text-black text-[30px] md:text-[40px] leading-[35px] ">Expert Consulting</h2>
+                <h2 className="text-black text-[30px] md:text-[40px] leading-[35px] ">Expert Advisory</h2>
                 <div className="space-y-7 text-sm md:text-xl text-dark-light">
-                  <p>Our consulting division is designed to support businesses looking to enter or scale within the African trade space. </p>
+                  <p>Our advisory division is designed to support businesses looking to enter or scale within the African trade space. </p>
                   <ul className="list-disc pl-5">
                     <li>Trade Finance</li>
                     <li>Export Education</li>
