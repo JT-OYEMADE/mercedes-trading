@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: ["/favicon.ico"],
+    apple: ["/favicon.ico"],
+    shortcut: ["/favicon.ico"],
   },
   authors: [{ name: "Mercedes Trading" }],
   creator: "Mercedes Trading",
