@@ -208,7 +208,7 @@ const navigationItems: NavigationItem[] = [
       { label: "Herbs & Spices", href: "/product/herbs-spices-botanicals" },
       { label: "Nuts & Oil Seeds", href: "/product/nuts-and-oil-seeds" },
       { label: "Energy", href: "/product/energy-and-natural-resources" },
-      { label: "Metals", href: "/product/solid-minerals" },
+      { label: "Solid Minerals", href: "/product/solid-minerals" },
     ],
   },
   { label: "Media", href: "/gallery" },
@@ -352,7 +352,7 @@ export const Navbar = () => {
                       ))}
                     </ul>
                     <div className="mt-8">
-                      <Link href={`/waitlist`}>
+                      <Link href={`/contact`}>
                         <Button label="Contact Us" className="" fullWidth />
                       </Link>
                     </div>

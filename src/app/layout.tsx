@@ -12,8 +12,8 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mercedestrading.com"),
   title: {
-    default: "Mercedes Trading - Unlocking Africa's Richest Resources",
-    template: "%s | Mercedes Trading",
+    default: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
+    template: "%s | MERCEDES TRADING",
   },
   description:
     "Mercedes Trading specializes in unlocking Africa's richest natural resources through sustainable trading partnerships. Discover premium African commodities and ethical sourcing solutions.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Mercedes Trading",
   ],
   icons: {
-    icon: ["/favicon.ico"],
+    icon: ["/app/favicon.ico"],
     apple: ["/apple-touch-icon.png"],
     shortcut: ["/apple-touch-icon.png"],
   },

@@ -56,7 +56,7 @@ export const Moving = () => {
             </div>
             <div id='mission'>
               <Badge text='our vision' />
-              <p className='text-sm md:text-2xl text-gray mt-2'>To become the leading global trading and operating platform for simplifying access to commodities in Africa.</p>
+              <p className='text-sm md:text-2xl text-gray mt-2'>To become the leading global trade and operating platform for simplifying access to commodities in Africa.</p>
             </div>
             <div>
               <Badge text='our mission' />
