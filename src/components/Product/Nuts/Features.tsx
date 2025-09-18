@@ -10,7 +10,7 @@ const features = [
   },
   {
     id: 3,
-    label: 'They have wide applications across industries including food processing, confectionery, skincare, cosmetics, and oil extraction.'
+    label: 'We also process quality nuts and oil seeds to their various extracts for various industrial applications including food processing, confectionery, cosmetics and pharmaceuticals.'
   },
 ]
 
