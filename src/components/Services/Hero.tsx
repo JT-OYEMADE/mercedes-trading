@@ -4,6 +4,7 @@ import Link from "next/link"
 import type React from "react"
 import { useState } from "react"
 import { Button, Textfield, TextAreaField } from "components/shared"
+import { FaInstagram, FaTiktok, FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa"
 
 interface FormData {
   fullName: string
@@ -94,29 +95,63 @@ export const Hero = () => {
               Get in touch letting us know your needs, wants and explore opportunities.
             </p>
             <div className="mt-12">
-              <Link
+              {/* <Link
                 href="mailto:support@usetechrevolve.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-black "
               >
                 mttlmited@email.com
-              </Link>
-              <div className="flex gap-4 mt-4 text-dark-light underline">
-                <Link href="https://www.instagram.com/mercedestrading_ltd?igsh=MXNxdWhsOGN4anB6&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                  Instagram
+              </Link> */}
+              <div className="flex gap-4 mt-4">
+                <Link
+                  href="https://www.instagram.com/mercedestrading_ltd?igsh=MXNxdWhsOGN4anB6&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram size={24} />
                 </Link>
-                <Link href="https://www.tiktok.com/@mercedes_trading?_t=ZS-8zYlGTcDAnq&_r=1" target="_blank" rel="noopener noreferrer">
-                  TikTok
+
+                <Link
+                  href="https://www.tiktok.com/@mercedes_trading?_t=ZS-8zYlGTcDAnq&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="TikTok"
+                >
+                  <FaTiktok size={24} />
                 </Link>
-                <Link href="https://www.linkedin.com/company/mercedes-trading-transport-ltd/" target="_blank" rel="noopener noreferrer">
-                  LinkedIn
+
+                <Link
+                  href="https://www.linkedin.com/company/mercedes-trading-transport-ltd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin size={24} />
                 </Link>
-                <Link href="https://www.facebook.com/share/16rM9EtypP/" target="_blank" rel="noopener noreferrer">
-                  Facebook
+
+                <Link
+                  href="https://www.facebook.com/share/16rM9EtypP/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook size={24} />
                 </Link>
-                <Link href="https://wa.me/message/UBU472P27QGPA1" target="_blank" rel="noopener noreferrer">
-                  WhatsApp
+
+                <Link
+                  href="https://wa.me/message/UBU472P27QGPA1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp size={24} />
                 </Link>
               </div>
             </div>

@@ -26,9 +26,9 @@ const gallery = [
   {
     pic: "gallery-8.png"
   },
-  {
-    pic: "gallery-9.png"
-  },
+  // {
+  //   pic: "gallery-9.png"
+  // },
   {
     pic: "gallery-10.png"
   },
@@ -44,13 +44,13 @@ const gallery = [
   {
     pic: "gallery-14.png"
   },
-  {
-    pic: "gallery-15.png"
-  },
-  {
-    pic: "gallery-16.png"
+  // {
+  //   pic: "gallery-15.png"
+  // },
+  // {
+  //   pic: "gallery-16.png"
 
-  },
+  // },
 
   {
     pic: "gallery-17.png"
@@ -70,7 +70,7 @@ export const Hero = () => {
           </h2>
           <p className="text-gray mt-3">Take a visual journey through how MTTL brings commodities from source to market.</p>
         </div>
-        <div className=" grid grid-cols-3 grid-rows-3 md:grid-cols-6 gap-2.5 mt-20">
+        <div className=" grid grid-cols-3 grid-rows-3 md:grid-cols-5 md:gap-y-5 gap-2.5 mt-20">
           {gallery.map((g, key) => (
             <div key={key} className=" ">
               <img src={`/images/${g.pic}`} alt={g.pic} className="" />
