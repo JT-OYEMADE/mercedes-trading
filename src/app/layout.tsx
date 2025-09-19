@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | MERCEDES TRADING",
   },
   description:
-    "Mercedes Trading specializes in unlocking Africa's richest natural resources through sustainable trading partnerships. Discover premium African commodities and ethical sourcing solutions.",
+    "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
   keywords: [
     "African trading",
     "natural resources",
@@ -28,11 +28,6 @@ export const metadata: Metadata = {
     "international trade",
     "Mercedes Trading",
   ],
-  icons: {
-    icon: ["/app/favicon.ico"],
-    apple: ["/apple-touch-icon.png"],
-    shortcut: ["/apple-touch-icon.png"],
-  },
   authors: [{ name: "Mercedes Trading" }],
   creator: "Mercedes Trading",
   publisher: "Mercedes Trading",
@@ -48,29 +43,20 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    type: "website",
-    locale: "en_US",
+    title: "MERCEDES TRADING | Africa's fastest growing global trading house.",
+    description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     url: "https://mercedestrading.com",
-    title: "Mercedes Trading - Unlocking Africa's Richest Resources",
-    description:
-      "Mercedes Trading specializes in unlocking Africa's richest natural resources through sustainable trading partnerships. Discover premium African commodities and ethical sourcing solutions.",
     siteName: "Mercedes Trading",
     images: [
       {
-        url: "/images/mercedes-blue-logo.svg",
+        url: "https://mercedestrading.com/thumbnail.png", // must be absolute URL
         width: 1200,
         height: 630,
-        alt: "Mercedes Trading - African Resources Trading Company",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Mercedes Trading - Unlocking Africa's Resources",
-        type: "image/jpeg",
+        alt: "My Website Thumbnail",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
   alternates: {
     canonical: "https://mercedestrading.com",
