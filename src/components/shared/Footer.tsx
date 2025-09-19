@@ -92,10 +92,6 @@ export const footerData = [
         link: '',
       },
       {
-        name: '📍 Kabba, Kogi State',
-        link: '',
-      },
-      {
         name: '📍 Bida, Niger State',
         link: '',
       },
