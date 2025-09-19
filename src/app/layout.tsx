@@ -82,54 +82,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#1e40af" />
-        <meta name="msapplication-TileColor" content="#1e40af" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="format-detection" content="telephone=no" />
-
-        {/* Favicon and app icons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/images/mercedes-blue-logo.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Mercedes Trading",
-              description: "Unlocking Africa's Richest Resources through sustainable trading partnerships",
-              url: "https://mercedestrading.com",
-              logo: "https://mercedestrading.com/images/mercedes-blue-logo.svg",
-              foundingDate: "2020",
-              industry: "Trading",
-              areaServed: {
-                "@type": "Place",
-                name: "Africa",
-              },
-              knowsAbout: [
-                "Natural Resources Trading",
-                "African Commodities",
-                "Sustainable Trading",
-                "Resource Extraction",
-                "International Trade",
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer service",
-                areaServed: "Worldwide",
-                availableLanguage: ["English"],
-              },
-            }),
-          }}
-        />
-      </head>
       <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   )
