@@ -3,7 +3,7 @@
 import Link from "next/link"
 import type React from "react"
 import { useState } from "react"
-import { Button, Textfield, TextAreaField } from "components/shared"
+import { Button, Textfield } from "components/shared"
 import { FaInstagram, FaTiktok, FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa"
 
 interface FormData {
