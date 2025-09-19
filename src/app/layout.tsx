@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     template: "%s | MERCEDES TRADING",
   },
   description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
+  icons: {
+    icon: ["/favicon.ico"],
+    apple: ["/apple-touch-icon.png"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
   keywords: [
     "African trading",
     "natural resources",
