@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
-import "./globals.scss";
+import "./globals.css"
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -16,8 +16,7 @@ export const metadata: Metadata = {
     default: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     template: "%s | MERCEDES TRADING",
   },
-  description:
-    "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
+  description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
   keywords: [
     "African trading",
     "natural resources",
@@ -45,15 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "MERCEDES TRADING | Africa's fastest growing global trading house.",
-    description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
+    description:
+      "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     url: "https://mercedestrading.com",
     siteName: "Mercedes Trading",
     images: [
       {
-        url: "https://mercedestrading.com/thumbnail.png", // must be absolute URL
+        url: "/thumbnail.jpg",
         width: 1200,
         height: 630,
-        alt: "My Website Thumbnail",
+        alt: "Mercedes Trading - Africa's fastest growing global trading house",
       },
     ],
     locale: "en_US",

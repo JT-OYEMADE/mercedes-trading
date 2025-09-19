@@ -28,7 +28,7 @@ export const Services = () => {
                   <p>Nuts & Oil Seeds: <span className="text-gray">Cashew Nuts, Shea Nuts, Cocoa, Sesame Seeds, Shea Nuts, Tiger Nuts, Soybean</span></p>
                   <p>Metals: <span className="text-gray">Tantalum, Lithium, Ilmenite, Rutile</span></p>
                   <p>Energy: <span className="text-gray">Bio char, Ethically sourced charcoal, Palm Kernel Shells.</span></p> */}
-                  <p>we provide strategic buying and selling of products and services that transforms Africa’s natural resources </p>
+                  <p>We source and trade essential products and services that transform Africa's natural resources.</p>
                   <ul className="list-disc pl-5">
                     <li>Exports</li>
                     <li id='logistics'>Sourcing & Brokerage</li>
