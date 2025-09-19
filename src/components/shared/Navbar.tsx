@@ -188,10 +188,10 @@ const navigationItems: NavigationItem[] = [
   {
     label: "About Us",
     submenu: [
-      { label: "Our track record", href: "record", isScroll: true },
       { label: "Who are we", href: "whoarewe", isScroll: true },
       { label: "Vision", href: "vision", isScroll: true },
       { label: "Our mission", href: "mission", isScroll: true },
+      { label: "Track record", href: "record", isScroll: true },
     ],
   },
   {

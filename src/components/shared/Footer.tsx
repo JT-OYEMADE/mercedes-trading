@@ -88,7 +88,7 @@ export const footerData = [
     header: 'Contact',
     list: [
       {
-        name: '📍Amuwo Odofin, Lagos State',
+        name: '📍Trade Fair Complex, Lagos State',
         link: '',
       },
       {

@@ -209,7 +209,7 @@ export const Hero = () => {
                 />
                 <Textfield
                   id="gradeExpectation"
-                  placeholder="Preferred grade expectation"
+                  placeholder="Preferred grade specification"
                   value={formData.gradeExpectation}
                   onChange={(e: any) => handleInputChange("gradeExpectation", e.target.value)}
                   required
