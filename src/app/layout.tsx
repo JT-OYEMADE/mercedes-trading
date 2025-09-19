@@ -10,6 +10,7 @@ const geistSans = Geist({
 })
 
 export const metadata: Metadata = {
+  manifest: "/site.webmanifest",
   metadataBase: new URL("https://mercedestrading.com"),
   title: {
     default: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
