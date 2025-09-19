@@ -11,7 +11,6 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   manifest: "/site.webmanifest",
-  metadataBase: new URL("https://mercedestrading.com"),
   title: {
     default: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     template: "%s | MERCEDES TRADING",
@@ -36,17 +35,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Mercedes Trading" }],
   creator: "Mercedes Trading",
   publisher: "Mercedes Trading",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
   openGraph: {
     title: "MERCEDES TRADING | Africa's fastest growing global trading house.",
     description:
@@ -63,21 +51,6 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  },
-  alternates: {
-    canonical: "https://mercedestrading.com",
-    languages: {
-      "en-US": "https://mercedestrading.com",
-    },
-  },
-  category: "business",
-  classification: "Trading Company",
-  other: {
-    "geo.region": "Africa",
-    "geo.placename": "Africa",
-    "business:contact_data:locality": "Africa",
-    "business:contact_data:region": "Africa",
-    "business:contact_data:country_name": "Multiple African Countries",
   },
 }
 
