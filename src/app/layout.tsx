@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
   description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
   icons: {
-    icon: ["/images/thumbnail.png"],
-    apple: ["/apple-touch-icon.png"],
-    shortcut: ["/apple-touch-icon.png"],
+    icon: ["/images/thumbnail.jpg"],
+    apple: ["/apple-touch-icon.jpg"],
+    shortcut: ["/apple-touch-icon.jpg"],
   },
   keywords: [
     "African trading",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     images: [
       {
-        url: "/thumbnail.png",
+        url: "/thumbnail.jpg",
         width: 1200,
         height: 630,
         alt: "Mercedes Trading - Africa's fastest growing global trading house",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MERCEDES TRADING | Africa's fastest growing global trading house",
     description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
-    images: ["/thumbnail.png"],
+    images: ["/thumbnail.jpg"],
   },
   other: {
     'fb:app_id': '61577912139596',
@@ -84,9 +84,9 @@ export default function RootLayout({
         <meta property="og:locale" content="en_US" />
 
         {/* Image meta tags */}
-        <meta property="og:image" content="https://mercedestrading.com/thumbnail.png" />
-        <meta property="og:image:url" content="https://mercedestrading.com/thumbnail.png" />
-        <meta property="og:image:secure_url" content="https://mercedestrading.com/thumbnail.png" />
+        <meta property="og:image" content="https://mercedestrading.com/thumbnail.jpg" />
+        <meta property="og:image:url" content="https://mercedestrading.com/thumbnail.jpg" />
+        <meta property="og:image:secure_url" content="https://mercedestrading.com/thumbnail.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpeg" />
@@ -98,7 +98,7 @@ export default function RootLayout({
         <meta name="twitter:creator" content="@mercedestrading" />
         <meta name="twitter:title" content="MERCEDES TRADING | Africa's fastest growing global trading house" />
         <meta name="twitter:description" content="MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease." />
-        <meta name="twitter:image" content="https://mercedestrading.com/thumbnail.png" />
+        <meta name="twitter:image" content="https://mercedestrading.com/thumbnail.jpg" />
         <meta name="twitter:image:alt" content="Mercedes Trading - Africa's fastest growing global trading house" />
 
         {/* Additional meta tags for better sharing */}
