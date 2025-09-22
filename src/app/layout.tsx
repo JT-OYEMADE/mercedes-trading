@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Mercedes Trading - Africa's fastest growing global trading house",
-        type: "image/png",
+        type: "image/jpeg",
       },
     ],
   },
@@ -58,22 +58,9 @@ export const metadata: Metadata = {
     title: "MERCEDES TRADING | Africa's fastest growing global trading house",
     description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     images: ["/thumbnail.png"],
-    creator: "@mercedestrading",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    // Add your Google Search Console verification if you have it
-    // google: "your-verification-code",
+  other: {
+    'fb:app_id': '61577912139596',
   },
 }
 
@@ -85,16 +72,36 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Additional explicit meta tags for WhatsApp */}
+        {/* Facebook App ID */}
+        <meta property="fb:app_id" content="61577912139596" />
+
+        {/* OpenGraph meta tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mercedestrading.com" />
+        <meta property="og:title" content="MERCEDES TRADING | Africa's fastest growing global trading house" />
+        <meta property="og:description" content="MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease." />
+        <meta property="og:site_name" content="Mercedes Trading" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Image meta tags */}
         <meta property="og:image" content="https://mercedestrading.com/thumbnail.png" />
+        <meta property="og:image:url" content="https://mercedestrading.com/thumbnail.png" />
+        <meta property="og:image:secure_url" content="https://mercedestrading.com/thumbnail.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:alt" content="Mercedes Trading - Africa's fastest growing global trading house" />
-        <meta name="twitter:image" content="https://mercedestrading.com/thumbnail.jpg" />
+
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@mercedestrading" />
+        <meta name="twitter:creator" content="@mercedestrading" />
+        <meta name="twitter:title" content="MERCEDES TRADING | Africa's fastest growing global trading house" />
+        <meta name="twitter:description" content="MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease." />
+        <meta name="twitter:image" content="https://mercedestrading.com/thumbnail.png" />
         <meta name="twitter:image:alt" content="Mercedes Trading - Africa's fastest growing global trading house" />
 
-        {/* Additional cache control for social media crawlers */}
+        {/* Additional meta tags for better sharing */}
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       </head>
       <body className={`${geistSans.variable} antialiased`}>{children}</body>
