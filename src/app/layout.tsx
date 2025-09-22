@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Mercedes Trading",
     images: [
       {
-        url: "/thumbnail.jpg",
+        url: "https://mercedestrading.com/thumbnail.jpg",
         width: 1200,
         height: 630,
         alt: "Mercedes Trading - Africa's fastest growing global trading house",
