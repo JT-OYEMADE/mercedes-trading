@@ -165,7 +165,7 @@
 
 import Link from "next/link"
 import { Button } from "./Button"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { HiMiniBars3 } from "react-icons/hi2"
 import { IoCloseSharp } from "react-icons/io5"
 import { HiChevronDown } from "react-icons/hi2"
@@ -218,6 +218,7 @@ const navigationItems: NavigationItem[] = [
 export const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -234,6 +235,29 @@ export const Navbar = () => {
   }, [])
   const darkNavLink = ["/contact", "/gallery", "/product"]
   const isDarkNav = darkNavLink.includes(pathname) || darkNavLink.some((link) => pathname?.startsWith(link + "/"))
+
+  const handleScrollNavigation = (targetSection: string) => {
+    if (pathname === "/") {
+      const element = document.getElementById(targetSection)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
+    } else {
+      router.push(`/#${targetSection}`)
+    }
+  }
+
+  useEffect(() => {
+    if (pathname === "/" && window.location.hash) {
+      const targetSection = window.location.hash.substring(1)
+      setTimeout(() => {
+        const element = document.getElementById(targetSection)
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" })
+        }
+      }, 100)
+    }
+  }, [pathname])
 
   return (
     <div>
@@ -282,7 +306,7 @@ export const Navbar = () => {
                 <div className="flex grow flex-col gap-y-10 overflow-y-auto bg-white px-6">
                   <div className="flex mt-10 shrink-0 items-center">
                     <Link href="/">
-                      <img className="h-6 w-auto" src="/images/mercedes-blue-logo.svg" alt="Bord" />
+                      <img className="h-6 w-auto" src="/images/mercedes-blue-logo.svg" alt="Mercedes Trading" />
                     </Link>
                   </div>
                   <nav className="flex flex-1 flex-col">
@@ -304,7 +328,10 @@ export const Navbar = () => {
                                           ? "text-primary"
                                           : "text-gray-600"
                                           }`}
-                                        onClick={() => setSidebarOpen(false)}
+                                        onClick={() => {
+                                          handleScrollNavigation(subItem.href)
+                                          setSidebarOpen(false)
+                                        }}
                                       >
                                         {subItem.label}
                                       </ScrollLink>
@@ -331,7 +358,10 @@ export const Navbar = () => {
                                   smooth={true}
                                   duration={500}
                                   className="cursor-pointer"
-                                  onClick={() => setSidebarOpen(false)}
+                                  onClick={() => {
+                                    handleScrollNavigation(item.href || "#")
+                                    setSidebarOpen(false)
+                                  }}
                                 >
                                   <p className={`font-normal text-lg text-gray`}>{item.label}</p>
                                 </ScrollLink>
@@ -399,6 +429,7 @@ export const Navbar = () => {
                                 to={subItem.href}
                                 smooth={true}
                                 duration={500}
+                                onClick={() => handleScrollNavigation(subItem.href)}
                                 className={`block px-4 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-primary cursor-pointer ${pathname === subItem.href || pathname?.startsWith(subItem.href + "/")
                                   ? "text-primary font-medium"
                                   : "text-gray-700"
@@ -425,7 +456,7 @@ export const Navbar = () => {
                   ) : (
                     <>
                       {item.isScroll ? (
-                        <ScrollLink to={item.href || '#'} smooth={true} duration={500} className="cursor-pointer">
+                        <ScrollLink to={item.href || '#'} onClick={() => handleScrollNavigation(item.href || "#")} smooth={true} duration={500} className="cursor-pointer">
                           <p
                             className={`font-normal ${isDarkNav && "text-dark"} text-sm ${isScrolled ? "text-primary" : "text-[#FEFEFE]"} hover:opacity-80 transition-opacity`}
                           >

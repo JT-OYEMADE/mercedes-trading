@@ -94,6 +94,9 @@ export const Hero = () => {
             <p className="text-gray text-xl mt-2.5 md:mt-5">
               Get in touch letting us know your needs, wants and explore opportunities.
             </p>
+            <p className="text-gray text-xl mt-2.5 md:mt-5">
+              B36, Anambra Plaza, International Trade Fair Complex, Badagry Expressway, Lagos.
+            </p>
             <div className="mt-12">
               {/* <Link
                 href="mailto:support@usetechrevolve.com"
@@ -209,7 +212,7 @@ export const Hero = () => {
                 />
                 <Textfield
                   id="gradeExpectation"
-                  placeholder="Preferred grade specification"
+                  placeholder="Preferred quality specification"
                   value={formData.gradeExpectation}
                   onChange={(e: any) => handleInputChange("gradeExpectation", e.target.value)}
                   required
