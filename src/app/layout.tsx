@@ -18,9 +18,13 @@ export const metadata: Metadata = {
   },
   description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
   icons: {
-    icon: ["/favicon.ico"],
+    icon: ["/images/thumbnail.png"],
     apple: ["/apple-touch-icon.png"],
     shortcut: ["/apple-touch-icon.png"],
+    other: {
+      rel: 'apple-touch-icon',
+      url: '/apple-touch-icon.png',
+    },
   },
   keywords: [
     "African trading",
