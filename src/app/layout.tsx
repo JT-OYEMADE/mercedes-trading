@@ -59,9 +59,7 @@ export const metadata: Metadata = {
     description: "MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease.",
     images: ["/thumbnail.jpg"],
   },
-  other: {
-    'fb:app_id': '61577912139596',
-  },
+  // Remove the 'other' property since we're handling fb:app_id manually
 }
 
 export default function RootLayout({
@@ -72,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Facebook App ID */}
+        {/* Facebook App ID - MUST use property attribute */}
         <meta property="fb:app_id" content="61577912139596" />
 
         {/* OpenGraph meta tags */}
@@ -85,14 +83,12 @@ export default function RootLayout({
 
         {/* Image meta tags */}
         <meta property="og:image" content="https://mercedestrading.com/thumbnail.jpg" />
-        <meta property="og:image:url" content="https://mercedestrading.com/thumbnail.jpg" />
-        <meta property="og:image:secure_url" content="https://mercedestrading.com/thumbnail.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:alt" content="Mercedes Trading - Africa's fastest growing global trading house" />
 
-        {/* Twitter Card meta tags */}
+        {/* Twitter Card meta tags - these use name attribute */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@mercedestrading" />
         <meta name="twitter:creator" content="@mercedestrading" />
