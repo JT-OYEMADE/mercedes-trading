@@ -94,6 +94,7 @@ export default function RootLayout({
         <meta name="twitter:creator" content="@mercedestrading" />
         <meta name="twitter:title" content="MERCEDES TRADING | Africa's fastest growing global trading house" />
         <meta name="twitter:description" content="MERCEDES TRADING | Africa's fastest growing global trading house | Powering African Exports with ease." />
+        <meta property="og:image" content="https://mercedestrading.com/thumbnail.jpg" />
         <meta name="twitter:image" content="https://mercedestrading.com/thumbnail.jpg" />
         <meta name="twitter:image:alt" content="Mercedes Trading - Africa's fastest growing global trading house" />
 
