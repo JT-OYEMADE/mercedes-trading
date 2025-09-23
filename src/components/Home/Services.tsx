@@ -11,7 +11,7 @@ export const Services = () => {
             Powering Africa’s Path to  <br />{' '}
             <span className=' text-gray'>Global Markets</span>{' '}
           </h2>
-          <p className='text-base md:text-2xl text-gray leading-[22px] md:leading-8 mt-3'>At Mercedes Trading & Transport Limited, At Mercedes Trading & Transport Limited, we offer complete solutions that power Africa’s participation in global trade. </p>
+          <p className='text-base md:text-2xl text-gray leading-[22px] md:leading-8 mt-3'>At Mercedes Trading & Transport Limited, we offer complete solutions that power Africa’s participation in global trade. </p>
         </div>
         <div className="mt-12">
           <div className="space-y-8 md:space-y-16">
