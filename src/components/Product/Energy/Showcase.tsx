@@ -10,9 +10,9 @@ const products = [
       "Premium charcoal produced through sustainable forestry practices. Clean-burning and efficient for industrial and domestic energy needs.",
   },
   {
-    name: "Biomass Shells",
+    name: "Biomass",
     description:
-      "Diverse biomass shells including palm kernel shells, shea nut shells, and cashew shells. Excellent renewable fuel sources for industrial energy generation.",
+      "Our biomass selection comprises agricultural waste including palm kernel shells, shea nut shells, and cashew shells. Excellent renewable fuel sources for industrial energy generation.",
   },
 ]
 

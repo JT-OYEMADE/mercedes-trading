@@ -6,7 +6,7 @@ export const Hero = () => {
           <h2 className='text-dark text-[30px] md:text-[60px] font-medium md:leading-[100%]'>
             Solid Minerals
           </h2>
-          <p className="text-gray mt-3">Africa is a hub for critical minerals that power modern industries, from energy to technology. At MTTL, we work closely with mining communities and aggregators to supply responsibly sourced solid minerals in their raw, export-ready state.</p>
+          <p className="text-gray mt-3">Africa is a hub for critical minerals that power modern industries, from energy to technology. At MTTL, we work closely with mining communities and aggregators to supply responsibly sourced solid minerals in their export-ready state.</p>
         </div>
         <div className="mx-auto">
           <img src='/images/minerals.png' alt='' />
