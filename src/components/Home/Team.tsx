@@ -35,7 +35,7 @@ export const Team = () => {
             <div className="text-center md:max-w-[683px] w-full">
               <h2 className="text-dark text-[30px] md:text-[40px] font-medium md:leading-[100%] mt-4">Meet the Team</h2>
               <p className="text-sm md:text-2xl text-gray mt-3">
-                Meet the experienced minds driving our operations a passionate team with deep expertise in supply chain, finance, marketing and project management.
+                Meet the passionate minds driving our operations. A dedicated team with deep expertise in supply chain, finance, marketing and project management.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10  md:max-w-[683px]">
