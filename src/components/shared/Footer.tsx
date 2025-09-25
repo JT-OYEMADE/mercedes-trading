@@ -38,9 +38,10 @@ export const footerData = [
         link: 'record',
         isScroll: true
       },
-      { name: "Who are we", link: "whoarewe", isScroll: true },
+      { name: "Who we are", link: "whoarewe", isScroll: true },
       { name: "Vision", link: "vision", isScroll: true },
-      { name: "Our mission", link: "mission", isScroll: true },
+      { name: "Our Mission", link: "mission", isScroll: true },
+      { name: "Our Team", link: "team", isScroll: true },
     ],
   },
   {
