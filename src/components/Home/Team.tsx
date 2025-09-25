@@ -28,7 +28,7 @@ export const Team = () => {
 
   return (
     <section className="p-[18px] md:p-6 -tracking-[0.04em]">
-      <div className="py-6 lg:py-24 bg-gray-light rounded-[20px] md:rounded-[40px]">
+      <div id="team" className="py-6 lg:py-24 bg-gray-light rounded-[20px] md:rounded-[40px]">
         <div className="container">
           <div className=" flex flex-col items-center">
             <Badge text="our team" />

@@ -31,7 +31,7 @@ export const Products = () => {
         <div className=" flex flex-col items-center">
           <Badge text='our products' />
           <div className="text-center md:max-w-[683px] w-full">
-            <h2 className='text-dark text-[30px] md:text-[40px] font-medium md:leading-[100%] mt-4'>What We Export</h2>
+            <h2 className='text-dark text-[30px] md:text-[40px] font-medium md:leading-[100%] mt-4'>What We Trade</h2>
             <p className='text-sm md:text-2xl text-gray mt-3'>
               From the heart of Africa to the global marketplace, we deliver high-quality commodities across multiple industries.
             </p>
