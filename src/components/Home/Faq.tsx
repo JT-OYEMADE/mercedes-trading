@@ -1,14 +1,14 @@
-'use client'
+'use client';
 
-import { Accordion, Button } from "components/shared";
-import Link from "next/link";
-import { useState } from "react";
+import { Accordion, Button } from 'components/shared';
+import Link from 'next/link';
+import { useState } from 'react';
 
 const questionAndAnswers = [
   {
     question: 'What types of commodities do you trade?',
     answer:
-      'We trade agricultural products such as cashew, cocoa, and sesame, along with critical minerals like lithium and tantalite.',
+      'We trade agricultural products such as cashew, cocoa, and sesame, along with critical minerals like lithium and tantalite. We also offer alternative energy products like biomass for industrial applications.',
   },
   {
     question: 'Can you help me with export financing?',
@@ -33,18 +33,18 @@ export const FAQ = () => {
   return (
     <section className='py-6 lg:py-24 bg-white -tracking-[0.04em]'>
       <div className='container'>
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
-          <div className="md:w-[40%]">
-            <div className=" flex flex-col gap-8 md:gap-[100px]">
+        <div className='flex flex-col md:flex-row gap-8 md:gap-16'>
+          <div className='md:w-[40%]'>
+            <div className=' flex flex-col gap-8 md:gap-[100px]'>
               <h2 className='text-dark text-[30px] md:text-[40px] font-medium leading-9 md:leading-[100%]'>
                 Frequently Asked <br /> Questions
               </h2>
-              <div className=" bg-gray-light rounded-[15px] px-5 py-6 ">
+              <div className=' bg-gray-light rounded-[15px] px-5 py-6 '>
                 <h2 className='text-dark text-2xl md:text-[40px] font-medium leading-none'>
                   Still have questions?
                 </h2>
-                <div className="mt-6">
-                  <p className="text-gray mb-1">Reach Out to Us</p>
+                <div className='mt-6'>
+                  <p className='text-gray mb-1'>Reach Out to Us</p>
                   <Link href='/contact'>
                     <Button label='Contact Us' />
                   </Link>
@@ -52,7 +52,7 @@ export const FAQ = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-[60%] ">
+          <div className='md:w-[60%] '>
             {questionAndAnswers.map(({ question, answer }, key) => (
               <Accordion
                 key={key}
@@ -69,5 +69,5 @@ export const FAQ = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
