@@ -1,13 +1,12 @@
-'use client'
+'use client';
 
-import Link from "next/link"
-import { Button } from "./Button"
+import Link from 'next/link';
+import { Button } from './Button';
 
 export const footerData = [
   {
     header: 'Products',
     list: [
-
       {
         name: 'Herbs, Spices & Botanicals',
         link: '/product/herbs-spices-botanicals',
@@ -36,12 +35,12 @@ export const footerData = [
       {
         name: 'Track record',
         link: 'record',
-        isScroll: true
+        isScroll: true,
       },
-      { name: "Who we are", link: "whoarewe", isScroll: true },
-      { name: "Vision", link: "vision", isScroll: true },
-      { name: "Our Mission", link: "mission", isScroll: true },
-      { name: "Our Team", link: "team", isScroll: true },
+      { name: 'Who we are', link: 'whoarewe', isScroll: true },
+      { name: 'Vision', link: 'vision', isScroll: true },
+      { name: 'Our Mission', link: 'mission', isScroll: true },
+      { name: 'Our Team', link: 'team', isScroll: true },
     ],
   },
   {
@@ -50,17 +49,17 @@ export const footerData = [
       {
         name: 'Trading',
         link: 'trading',
-        isScroll: true
+        isScroll: true,
       },
       {
         name: 'Logistics',
         link: 'logistics',
-        isScroll: true
+        isScroll: true,
       },
       {
         name: 'Trade Advisory',
         link: 'consulting',
-        isScroll: true
+        isScroll: true,
       },
     ],
   },
@@ -89,7 +88,7 @@ export const footerData = [
     header: 'Contact',
     list: [
       {
-        name: '📍Trade Fair Complex, Lagos State',
+        name: '📍Intl. Trade Fair Complex, Lagos State',
         link: '',
       },
       {
@@ -112,59 +111,71 @@ export const footerData = [
   },
 ];
 
-
 export const Footer = () => {
   const handleScrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
+        behavior: 'smooth',
+        block: 'start',
+      });
     }
-  }
+  };
   return (
-    <footer className="p-[18px] md:p-6 -tracking-[0.04em] rounded-[20px] md:rounded-[40px] ">
+    <footer className='p-[18px] md:p-6 -tracking-[0.04em] rounded-[20px] md:rounded-[40px] '>
       <div className='pt-24 relative bg-footer-mobile md:bg-footer-bg bg-cover bg-no-repeat min-h-fit sm:min-h-0 rounded-[20px] md:rounded-[40px]'>
-        <div className="container">
-          <div className=" md:w-[568px] mx-auto flex flex-col items-center text-center text-white space-y-3 mb-[66px]">
-            <h1 className=" text-[40px] md:text-6xl leading-[40px] md:leading-[65px] font-semibold">Explore Our Global <br /> Capabilities</h1>
-            <p className=" leading-[22px] font-medium">From sourcing and shipping to strategy and support, we’re equipped to move your business beyond borders.</p>
+        <div className='container'>
+          <div className=' md:w-[568px] mx-auto flex flex-col items-center text-center text-white space-y-3 mb-[66px]'>
+            <h1 className=' text-[40px] md:text-6xl leading-[40px] md:leading-[65px] font-semibold'>
+              Explore Our Global <br /> Capabilities
+            </h1>
+            <p className=' leading-[22px] font-medium'>
+              From sourcing and shipping to strategy and support, we’re equipped to move your
+              business beyond borders.
+            </p>
             <Link href='/contact'>
-              <Button label='Contact Us' state="light" />
+              <Button label='Contact Us' state='light' />
             </Link>
           </div>
         </div>
-        <div className="px-4 pb-5">
-          <div className="bg-[#FEFEFE] rounded-[40px] px-5 md:px-10 pt-14">
-            <div className="mb-8 flex flex-col lg:flex-row space-y-8 md:space-y-0 lg:items-start justify-between">
-              <div className="flex items-end gap-x-1">
+        <div className='px-4 pb-5'>
+          <div className='bg-[#FEFEFE] rounded-[40px] px-5 md:px-10 pt-14'>
+            <div className='mb-8 flex flex-col lg:flex-row space-y-8 md:space-y-0 lg:items-start justify-between'>
+              <div className='flex items-end gap-x-1'>
                 <Link href='/'>
-                  <img className='h-12 w-auto' src='/images/mercedes-blue-logo.svg' alt='Mercedes Blue Logo' />
+                  <img
+                    className='h-12 w-auto'
+                    src='/images/mercedes-blue-logo.svg'
+                    alt='Mercedes Blue Logo'
+                  />
                 </Link>
-                <p className="text-gray leading-snug">Mercedes Trading & <br /> Transport Limited (MTTL)</p>
+                <p className='text-gray leading-snug'>
+                  Mercedes Trading & <br /> Transport Limited (MTTL)
+                </p>
               </div>
-              <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-10">
+              <div className='flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-10'>
                 {footerData.map((x, i) => (
                   <div key={i}>
-                    <h3 className="text-xl text-primary">{x.header}</h3>
-                    <div className="mt-3">
+                    <h3 className='text-xl text-primary'>{x.header}</h3>
+                    <div className='mt-3'>
                       {x.list.map((item, key) => (
                         <div key={key}>
                           {item.isScroll ? (
                             <button
                               onClick={() => handleScrollToSection(item.link)}
-                              className="text-gray hover:text-primary transition-colors cursor-pointer text-left"
-                            >
+                              className='text-gray hover:text-primary transition-colors cursor-pointer text-left'>
                               {item.name}
                             </button>
                           ) : (
                             <Link
                               href={item.link}
-                              target={item.link.startsWith("http") ? "_blank" : undefined}
-                              rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                              className="text-gray hover:text-primary transition-colors"
-                            >
+                              target={item.link.startsWith('http') ? '_blank' : undefined}
+                              rel={
+                                item.link.startsWith('http')
+                                  ? 'noopener noreferrer'
+                                  : undefined
+                              }
+                              className='text-gray hover:text-primary transition-colors'>
                               {item.name}
                             </Link>
                           )}
@@ -175,12 +186,12 @@ export const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="flex justify-center">
-              <img src="/images/mercedes-text.svg" alt="mercedes-text" />
+            <div className='flex justify-center'>
+              <img src='/images/mercedes-text.svg' alt='mercedes-text' />
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
